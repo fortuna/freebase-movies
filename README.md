@@ -21,3 +21,7 @@ time ./parse_tsv.py film | tee film.jsons | ./jsons_to_changeset.py | tee film.c
 
 easy_install google-api-python-client
 time ./export_genres.py API_KEY > genres.json
+
+# To convert the genre dump to an XML tree dimension
+
+cat genres.json | ./json_to_tree_dimension.py| xmllint --format -

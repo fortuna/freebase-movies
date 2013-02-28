@@ -12,3 +12,12 @@ time ./parse_tsv.py film | tee film.jsons | ./jsons_to_changeset.py | tee film.c
 
 # To export a keyword dimension to a tree dimension definition
 ./facet_to_dimension.py {keyword_dimension_id} {min_count_filter} | xmllint --format -
+
+# To export a tree structure of film genres
+# Go to https://code.google.com/apis/console/
+# Create a project
+# Create a new server API key. You will use this below.
+# Enable the freebase API for the project
+
+easy_install google-api-python-client
+time ./export_genres.py API_KEY > genres.json

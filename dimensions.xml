@@ -1,0 +1,763 @@
+<dimensions>
+  <dimension id='_kind' type='keyword'/>
+  <dimension id='propertyNames' type='keyword' key='_propertyName'/>
+  <dimension id='initial_release_year' key='initial_release_date' type='time' format='yyyy' min='1888' max='2030'/>
+  <dimension id='rating' type='tree'>
+    <element id='Unrated'/>
+    <element id='G' value='invalid'>
+      <element id='G (USA)'/>
+      <element id='G (Canada)' value='G'/>
+    </element>
+    <element id='PG' value='invalid'>
+      <element id='PG (USA)'/>
+      <element id='PG (Canada)' value='PG'/>
+      <element id='UK: PG'/>
+    </element>
+    <element id='PG-13' value='invalid'>
+      <element id='PG-13 (USA)'/>
+      <element id='14A (Canada)'/>
+      <element id='UK: 12a'/>
+      <element id='UK: 12'/>
+      <element id='UK: 15'/>
+    </element>
+    <element id='R' value='invalid'>
+      <element id='R (USA)'/>
+      <element id='18A'/>
+      <element id='UK: 18'/>
+    </element>
+    <element id='X' name='Adult' value='invalid'>
+      <element id='NC-17 (USA)'/>
+      <element id='R (Canada)' value='R'/>
+      <element id='UK: R18'/>
+      <element id='X-rated'/>
+      <element id='X general' value='X'/>
+    </element>
+  </dimension>
+  <dimension id="genre" type="tree">
+    <element id="Cult film"/>
+    <element id="Film noir">
+      <element id="Film noir|Neo-noir" name="Neo-noir" value="Neo-noir"/>
+      <element id="Film noir|Future noir" name="Future noir" value="Future noir"/>
+    </element>
+    <element id="Historical drama"/>
+    <element id="Jianghu"/>
+    <element id="Martial Arts Film"/>
+    <element id="Musical">
+      <element id="Musical|Jukebox musical" name="Jukebox musical" value="Jukebox musical"/>
+    </element>
+    <element id="Propaganda film">
+      <element id="Propaganda film|Patriotic film" name="Patriotic film" value="Patriotic film"/>
+    </element>
+    <element id="Screwball comedy"/>
+    <element id="War film">
+      <element id="War film|Gulf War" name="Gulf War" value="Gulf War"/>
+    </element>
+    <element id="Wuxia"/>
+    <element id="Spy film"/>
+    <element id="Legal drama"/>
+    <element id="Western"/>
+    <element id="Family Film"/>
+    <element id="Mockumentary"/>
+    <element id="B movie"/>
+    <element id="Slasher"/>
+    <element id="Caper story"/>
+    <element id="Disaster Film">
+      <element id="Disaster Film|Natural disaster" name="Natural disaster" value="Natural disaster"/>
+    </element>
+    <element id="Ephemeral film"/>
+    <element id="Kino-Pravda"/>
+    <element id="Thriller">
+      <element id="Thriller|Psycho-biddy" name="Psycho-biddy" value="Psycho-biddy"/>
+    </element>
+    <element id="Gross-out film"/>
+    <element id="Sword and Sandal"/>
+    <element id="Indie film"/>
+    <element id="New Queer Cinema"/>
+    <element id="Mindfuck"/>
+    <element id="Teen film">
+      <element id="Teen film|Teen angst" name="Teen angst" value="Teen angst"/>
+      <element id="Teen film|Juvenile Delinquency Film" name="Juvenile Delinquency Film" value="Juvenile Delinquency Film"/>
+    </element>
+    <element id="Heroic bloodshed"/>
+    <element id="Chick flick">
+      <element id="Chick flick|Romantic comedy" name="Romantic comedy" value="Romantic comedy"/>
+      <element id="Chick flick|Romance Film" name="Romance Film" value="Romance Film">
+        <element id="Chick flick|Romance Film|Romantic comedy" name="Romantic comedy" value="Romantic comedy"/>
+      </element>
+    </element>
+    <element id="Art film"/>
+    <element id="Tokusatsu"/>
+    <element id="Underground film"/>
+    <element id="Biographical film"/>
+    <element id="Adventure film">
+      <element id="Adventure film|Swashbuckler film" name="Swashbuckler film" value="Swashbuckler film"/>
+      <element id="Adventure film|Action/Adventure" name="Action/Adventure" value="Action/Adventure"/>
+    </element>
+    <element id="Jidaigeki"/>
+    <element id="World cinema"/>
+    <element id="Stoner film"/>
+    <element id="Road movie">
+      <element id="Road movie|Road-Horror" name="Road-Horror" value="Road-Horror"/>
+    </element>
+    <element id="Chopsocky"/>
+    <element id="Wire fu"/>
+    <element id="Highlight film"/>
+    <element id="Shoot 'em up Western"/>
+    <element id="Kitchen sink realism"/>
+    <element id="Autoethnography"/>
+    <element id="Spiritual film"/>
+    <element id="Compilation movie"/>
+    <element id="Mo lei tau"/>
+    <element id="Ostern"/>
+    <element id="Buddy film">
+      <element id="Buddy film|Buddy cop film" name="Buddy cop film" value="Buddy cop film"/>
+      <element id="Buddy film|Female buddy film" name="Female buddy film" value="Female buddy film"/>
+    </element>
+    <element id="Rap-fu"/>
+    <element id="Conspiracy fiction"/>
+    <element id="Bad girl movies"/>
+    <element id="Comedy film"/>
+    <element id="Actuality film"/>
+    <element id="Fictional film"/>
+    <element id="Tendency film"/>
+    <element id="Epic film"/>
+    <element id="Social problem film"/>
+    <element id="Rubble film"/>
+    <element id="Psycho film"/>
+    <element id="Semidocumentary"/>
+    <element id="Psychorealism"/>
+    <element id="Microcinema"/>
+    <element id="Remodernist Film"/>
+    <element id="No Wave Cinema"/>
+    <element id="Beach Party film"/>
+    <element id="Nudie film"/>
+    <element id="Paracinema"/>
+    <element id="Anti-war film"/>
+    <element id="Science fiction Western"/>
+    <element id="Amateur film"/>
+    <element id="Structural film"/>
+    <element id="Independence Movies"/>
+    <element id="Weird West"/>
+    <element id="Red curtain"/>
+    <element id="Serial film"/>
+    <element id="Doomsday film"/>
+    <element id="Yakuza film"/>
+    <element id="Heimatfilm"/>
+    <element id="Psychological thriller"/>
+    <element id="Colonial cinema"/>
+    <element id="Meet cute film"/>
+    <element id="Space western"/>
+    <element id="Children's film"/>
+    <element id="Race movie"/>
+    <element id="Black-meets-white film"/>
+    <element id="Day in the life of"/>
+    <element id="Telefono Bianco"/>
+    <element id="Hyperlink cinema"/>
+    <element id="&quot;Gibanica&quot; Westerns"/>
+    <element id="Metafilm"/>
+    <element id="Godsploitation"/>
+    <element id="Chicano films"/>
+    <element id="Cloak-and-dagger film"/>
+    <element id="Comedy of remarriage"/>
+    <element id="Mafia Comedy"/>
+    <element id="Kiddie flick"/>
+    <element id="Extreme cinema"/>
+    <element id="Cinema of South America"/>
+    <element id="Australasian cinema"/>
+    <element id="North American cinema"/>
+    <element id="Chanchada"/>
+    <element id="Gendaigeki"/>
+    <element id="Shomingeki"/>
+    <element id="Monster movie"/>
+    <element id="Hood film"/>
+    <element id="Erotic thriller"/>
+    <element id="Zombie comedy"/>
+    <element id="Kid Comedies"/>
+    <element id="Animation">
+      <element id="Animation|Stop motion" name="Stop motion" value="Stop motion">
+        <element id="Animation|Stop motion|Clay animation" name="Clay animation" value="Clay animation"/>
+      </element>
+    </element>
+    <element id="Anime"/>
+    <element id="Erotic Science Fiction"/>
+    <element id="Parody"/>
+    <element id="Silent film"/>
+    <element id="French New Wave"/>
+    <element id="Social commentary"/>
+    <element id="Short Film"/>
+    <element id="Melodrama"/>
+    <element id="Bollywood"/>
+    <element id="Religious Film"/>
+    <element id="Surrealism"/>
+    <element id="Political fiction"/>
+    <element id="Yuri"/>
+    <element id="Sh&#x14D;jo manga"/>
+    <element id="Action"/>
+    <element id="Opera"/>
+    <element id="Family Drama"/>
+    <element id="Coming of age">
+      <element id="Coming of age|Teen angst" name="Teen angst" value="Teen angst"/>
+    </element>
+    <element id="Comedy-drama"/>
+    <element id="Revenge Drama"/>
+    <element id="Action film">
+      <element id="Action film|Action/Adventure" name="Action/Adventure" value="Action/Adventure"/>
+      <element id="Action film|Superhero movie" name="Superhero movie" value="Superhero movie"/>
+    </element>
+    <element id="Punk rock"/>
+    <element id="Conspiracy theory"/>
+    <element id="Satire">
+      <element id="Satire|Political satire" name="Political satire" value="Political satire"/>
+    </element>
+    <element id="Mecha"/>
+    <element id="Animated cartoon"/>
+    <element id="Dystopia"/>
+    <element id="Southern Gothic"/>
+    <element id="Crime">
+      <element id="Crime|Juvenile Delinquency Film" name="Juvenile Delinquency Film" value="Juvenile Delinquency Film"/>
+    </element>
+    <element id="Apocalyptic and post-apocalyptic fiction"/>
+    <element id="Musical Drama"/>
+    <element id="Erotica"/>
+    <element id="Biography"/>
+    <element id="Black-and-white"/>
+    <element id="Period piece"/>
+    <element id="Anti-war"/>
+    <element id="Ninja movie"/>
+    <element id="Science Fiction">
+      <element id="Science Fiction|Future history" name="Future history" value="Future history"/>
+      <element id="Science Fiction|Steampunk" name="Steampunk" value="Steampunk"/>
+      <element id="Science Fiction|Cyberpunk" name="Cyberpunk" value="Cyberpunk"/>
+      <element id="Science Fiction|Science fantasy" name="Science fantasy" value="Science fantasy"/>
+      <element id="Science Fiction|Space opera" name="Space opera" value="Space opera"/>
+      <element id="Science Fiction|Sci-Fi &amp; Fantasy" name="Sci-Fi &amp; Fantasy" value="Sci-Fi &amp; Fantasy"/>
+    </element>
+    <element id="Comedy">
+      <element id="Comedy|Sitcom" name="Sitcom" value="Sitcom"/>
+      <element id="Comedy|Romantic comedy" name="Romantic comedy" value="Romantic comedy"/>
+      <element id="Comedy|Stand-up comedy" name="Stand-up comedy" value="Stand-up comedy"/>
+      <element id="Comedy|Black comedy" name="Black comedy" value="Black comedy"/>
+      <element id="Comedy|Slapstick" name="Slapstick" value="Slapstick"/>
+      <element id="Comedy|Musical comedy" name="Musical comedy" value="Musical comedy"/>
+      <element id="Comedy|Workplace Comedy" name="Workplace Comedy" value="Workplace Comedy"/>
+    </element>
+    <element id="Newsreel"/>
+    <element id="Murder-mystery"/>
+    <element id="Supermarionation"/>
+    <element id="Plague"/>
+    <element id="Foreign legion"/>
+    <element id="Early Christianity"/>
+    <element id="Television pilot"/>
+    <element id="Alternate history"/>
+    <element id="Camp"/>
+    <element id="Dogme 95"/>
+    <element id="Fantasy">
+      <element id="Fantasy|Sword and sorcery" name="Sword and sorcery" value="Sword and sorcery"/>
+      <element id="Fantasy|Children's Fantasy" name="Children's Fantasy" value="Children's Fantasy"/>
+      <element id="Fantasy|Sci-Fi &amp; Fantasy" name="Sci-Fi &amp; Fantasy" value="Sci-Fi &amp; Fantasy"/>
+    </element>
+    <element id="Live-action/animated film"/>
+    <element id="Movies About Gladiators"/>
+    <element id="Archaeology"/>
+    <element id="Museums and art galleries"/>
+    <element id="Libraries and librarians"/>
+    <element id="Archives and records"/>
+    <element id="Airplanes and airports"/>
+    <element id="Detective fiction">
+      <element id="Detective fiction|Whodunit" name="Whodunit" value="Whodunit"/>
+    </element>
+    <element id="Antihero"/>
+    <element id="History of the Netherlands"/>
+    <element id="Television film"/>
+    <element id="Private military company"/>
+    <element id="Devil-child films"/>
+    <element id="K-Horror"/>
+    <element id="Z movie"/>
+    <element id="Samurai cinema"/>
+    <element id="Dance">
+      <element id="Dance|B-boying" name="B-boying" value="B-boying"/>
+    </element>
+    <element id="Computer Animation"/>
+    <element id="Supernatural">
+      <element id="Supernatural|Werewolf fiction" name="Werewolf fiction" value="Werewolf fiction"/>
+    </element>
+    <element id="LGBT"/>
+    <element id="History"/>
+    <element id="Christian film"/>
+    <element id="Monster"/>
+    <element id="Auto racing"/>
+    <element id="Techno-thriller"/>
+    <element id="Gay Themed"/>
+    <element id="Tribute"/>
+    <element id="Nuclear warfare"/>
+    <element id="Cold War"/>
+    <element id="Kaiju"/>
+    <element id="Time travel"/>
+    <element id="Ealing Comedies"/>
+    <element id="Technicolor"/>
+    <element id="Experimental film"/>
+    <element id="Pre-Code Hollywood"/>
+    <element id="Period Horror"/>
+    <element id="Anthology"/>
+    <element id="Expressionism"/>
+    <element id="College life"/>
+    <element id="Roadshow/Carny"/>
+    <element id="Courtroom Drama"/>
+    <element id="Burlesque"/>
+    <element id="Backstage"/>
+    <element id="Operetta"/>
+    <element id="Goat gland"/>
+    <element id="Gay"/>
+    <element id="Mountain film"/>
+    <element id="Cinema of Africa"/>
+    <element id="Surf film"/>
+    <element id="Gross out"/>
+    <element id="Slice of life story"/>
+    <element id="Political cinema"/>
+    <element id="Postmodernist film"/>
+    <element id="Florida Western"/>
+    <element id="Home movies"/>
+    <element id="Hip hop film"/>
+    <element id="Northern"/>
+    <element id="German underground horror"/>
+    <element id="Outlaw biker film"/>
+    <element id="Girls with guns"/>
+    <element id="Mouth of Garbage Cinema"/>
+    <element id="Rape and revenge film"/>
+    <element id="Guy-cry"/>
+    <element id="Sponsored film">
+      <element id="Sponsored film|Training film" name="Training film" value="Training film"/>
+    </element>
+    <element id="Masala"/>
+    <element id="Mexploitation"/>
+    <element id="Blue film"/>
+    <element id="Reality film"/>
+    <element id="Eurospy films"/>
+    <element id="Lucha film"/>
+    <element id="Docufiction"/>
+    <element id="Ethnographic Film"/>
+    <element id="Animated documentary"/>
+    <element id="Horror comedy"/>
+    <element id="Sword and sorcery films"/>
+    <element id="Cartoon"/>
+    <element id="Epic Western"/>
+    <element id="Submarine films"/>
+    <element id="Documentary">
+      <element id="Documentary|Mondo film" name="Mondo film" value="Mondo film"/>
+      <element id="Documentary|Concert film" name="Concert film" value="Concert film"/>
+      <element id="Documentary|Docudrama" name="Docudrama" value="Docudrama"/>
+      <element id="Documentary|Historical Documentaries" name="Historical Documentaries" value="Historical Documentaries"/>
+      <element id="Documentary|Social &amp; Cultural Documentaries" name="Social &amp; Cultural Documentaries" value="Social &amp; Cultural Documentaries"/>
+    </element>
+    <element id="Christmas movie"/>
+    <element id="Singing cowboy"/>
+    <element id="Alien invasion"/>
+    <element id="Lost film"/>
+    <element id="Direct-to-video"/>
+    <element id="Damsel in distress"/>
+    <element id="Comedy of manners"/>
+    <element id="Anti-McCarthyist"/>
+    <element id="Ballet"/>
+    <element id="Film adaptation"/>
+    <element id="Roadshow theatrical release"/>
+    <element id="Talkie"/>
+    <element id="Music"/>
+    <element id="Shakespearean tragedy"/>
+    <element id="Montage"/>
+    <element id="Serial drama"/>
+    <element id="Family saga"/>
+    <element id="Femme fatale"/>
+    <element id="Point of view shot"/>
+    <element id="Multimedia"/>
+    <element id="Nuclear holocaust"/>
+    <element id="Tragicomedy"/>
+    <element id="Prison escape"/>
+    <element id="School story"/>
+    <element id="Externally Synchronized Sound"/>
+    <element id="Surfing"/>
+    <element id="Hobbies and interests">
+      <element id="Hobbies and interests|Sports film" name="Sports film" value="Sports film">
+        <element id="Hobbies and interests|Sports film|Horse racing" name="Horse racing" value="Horse racing"/>
+      </element>
+    </element>
+    <element id="Coming out"/>
+    <element id="Existentialism"/>
+    <element id="Romantic fantasy"/>
+    <element id="Horror">
+      <element id="Horror|Psychological horror" name="Psychological horror" value="Psychological horror"/>
+      <element id="Horror|Japanese horror" name="Japanese horror" value="Japanese horror"/>
+      <element id="Horror|Psycho-biddy" name="Psycho-biddy" value="Psycho-biddy"/>
+      <element id="Horror|Road-Horror" name="Road-Horror" value="Road-Horror"/>
+      <element id="Horror|Splatter film" name="Splatter film" value="Splatter film"/>
+      <element id="Horror|Zombie Film" name="Zombie Film" value="Zombie Film"/>
+    </element>
+    <element id="Best of compilation"/>
+    <element id="BDSM"/>
+    <element id="Transgender"/>
+    <element id="Part-talkie"/>
+    <element id="Star vehicle"/>
+    <element id="Nature"/>
+    <element id="Education"/>
+    <element id="Political thriller"/>
+    <element id="Remake"/>
+    <element id="Travel"/>
+    <element id="Albino bias"/>
+    <element id="Sepia tone"/>
+    <element id="Therimin music"/>
+    <element id="Trial film"/>
+    <element id="Mob film"/>
+    <element id="Heritage film"/>
+    <element id="Mockbuster"/>
+    <element id="Christian film industry"/>
+    <element id="Wiener Film"/>
+    <element id="Hentai"/>
+    <element id="Natural horror film"/>
+    <element id="New French Extremity"/>
+    <element id="Farce"/>
+    <element id="comic tragedy"/>
+    <element id="Real Robot"/>
+    <element id="Fan film"/>
+    <element id="Music video"/>
+    <element id="Religion"/>
+    <element id="Homoeroticism"/>
+    <element id="Rockumentary"/>
+    <element id="Neorealism"/>
+    <element id="C-Movie"/>
+    <element id="Bedroom farce"/>
+    <element id="Feature film"/>
+    <element id="Magic realism"/>
+    <element id="Collage"/>
+    <element id="Cin&#xE9;ma v&#xE9;rit&#xE9;"/>
+    <element id="Parkour in popular culture"/>
+    <element id="Pansori"/>
+    <element id="Medical fiction"/>
+    <element id="Evil clown"/>
+    <element id="Fantastique"/>
+    <element id="War effort"/>
+    <element id="Silent comedy"/>
+    <element id="Teleplay"/>
+    <element id="Czechoslovak New Wave"/>
+    <element id="Silhouette animation"/>
+    <element id="World history"/>
+    <element id="Absurdism"/>
+    <element id="Suspense"/>
+    <element id="Outlaw"/>
+    <element id="Docmentary"/>
+    <element id="Male bonding"/>
+    <element id="Gay Interest"/>
+    <element id="80's"/>
+    <element id="Closeted"/>
+    <element id="High fantasy"/>
+    <element id="Adevnture"/>
+    <element id="Television advertisement"/>
+    <element id="Sageuk"/>
+    <element id="Sci Fi Pictures original films"/>
+    <element id="Fairy tale"/>
+    <element id="Avant-garde"/>
+    <element id="Kafkaesque"/>
+    <element id="Political Documetary"/>
+    <element id="British New Wave"/>
+    <element id="HIV infection"/>
+    <element id="Thuggee"/>
+    <element id="Viral video"/>
+    <element id="Promotion"/>
+    <element id="Drama">
+      <element id="Drama|Political drama" name="Political drama" value="Political drama"/>
+      <element id="Drama|Romantic drama" name="Romantic drama" value="Romantic drama"/>
+      <element id="Drama|Costume drama" name="Costume drama" value="Costume drama"/>
+      <element id="Drama|Crime Drama" name="Crime Drama" value="Crime Drama"/>
+    </element>
+    <element id="Revenge"/>
+    <element id="News"/>
+    <element id="Classical music"/>
+    <element id="Christianity"/>
+    <element id="Sermons"/>
+    <element id="Enfant"/>
+    <element id="Hardcore punk"/>
+    <element id="Metalcore"/>
+    <element id="Vampire film"/>
+    <element id="Tamil cinema"/>
+    <element id="Gujarati cinema"/>
+    <element id="International"/>
+    <element id="Bourekas film"/>
+    <element id="Documentation"/>
+    <element id="Film &#xE0; clef"/>
+    <element id="Christmas special"/>
+    <element id="coming of age"/>
+    <element id="Pollywood"/>
+    <element id="Rumberas film"/>
+    <element id="Dramai"/>
+    <element id="Demonic child"/>
+    <element id="Talk show"/>
+    <element id="Sci-Fi Thriller"/>
+    <element id="Environment"/>
+    <element id="Mumblecore"/>
+    <element id="Color motion picture film"/>
+    <element id="Nollywood"/>
+    <element id="Reality television"/>
+    <element id="Adeventure"/>
+    <element id="Mahjong movie"/>
+    <element id="Sci-Fi Adventure"/>
+    <element id="Self-help"/>
+    <element id="Sci-Fi Horror"/>
+    <element id="movie riffing"/>
+    <element id="Drime"/>
+    <element id="Action Thriller"/>
+    <element id="drama"/>
+    <element id="Alien Sci-Fi"/>
+    <element id="Spy fiction"/>
+    <element id="Current affairs"/>
+    <element id="Live action"/>
+    <element id="Tollywood"/>
+    <element id="Reboot"/>
+    <element id="Prison film"/>
+    <element id="Television Film"/>
+    <element id="Revisionism">
+      <element id="Revisionism|Revisionist Western" name="Revisionist Western" value="Revisionist Western">
+        <element id="Revisionism|Revisionist Western|Acid western" name="Acid western" value="Acid western"/>
+      </element>
+      <element id="Revisionism|Revisionist Fairy Tale" name="Revisionist Fairy Tale" value="Revisionist Fairy Tale"/>
+    </element>
+    <element id="Family Comedies"/>
+    <element id="Children &amp; Family Movies"/>
+    <element id="Gender inequality"/>
+    <element id="Women in Pakistan"/>
+    <element id="Chivalric romance"/>
+    <element id="Television documentary"/>
+    <element id="Sketch"/>
+    <element id="Webisode"/>
+    <element id="Mythological Fantasy"/>
+    <element id="Motor Sports"/>
+    <element id="Abstract film"/>
+    <element id="Art history"/>
+    <element id="Action Comedy"/>
+    <element id="Addiction Drama"/>
+    <element id="Adult Education"/>
+    <element id="Adventure Comedy"/>
+    <element id="Adventure Travel"/>
+    <element id="Aerobic Exercise"/>
+    <element id="Alien Film"/>
+    <element id="Alternative Health"/>
+    <element id="Ambiance"/>
+    <element id="Animal Picture"/>
+    <element id="Animals"/>
+    <element id="Animated Musical"/>
+    <element id="Anthropology"/>
+    <element id="Architecture &amp; Design"/>
+    <element id="Armchair Travel"/>
+    <element id="Audio-Visual"/>
+    <element id="B-Western"/>
+    <element id="Backstage Musical"/>
+    <element id="Ballroom Dance"/>
+    <element id="Beach Film"/>
+    <element id="Beauty &amp; Fashion"/>
+    <element id="Biker Film"/>
+    <element id="Biological Sciences"/>
+    <element id="Biopic [feature]"/>
+    <element id="Bloopers &amp; Candid Camera"/>
+    <element id="British Empire Film"/>
+    <element id="Business"/>
+    <element id="Careers"/>
+    <element id="Cavalry Film"/>
+    <element id="Chase Movie"/>
+    <element id="Childhood Drama"/>
+    <element id="Children's Educational"/>
+    <element id="Children's Entertainment"/>
+    <element id="Children's Issues"/>
+    <element id="Children's/Family"/>
+    <element id="College &amp; Test Prep"/>
+    <element id="Combat Films"/>
+    <element id="Comedy of Errors"/>
+    <element id="Comedy Thriller"/>
+    <element id="Comedy Western"/>
+    <element id="Computers"/>
+    <element id="Cooking &amp; Food"/>
+    <element id="Costume Adventure"/>
+    <element id="Costume Horror"/>
+    <element id="Courtroom Comedy"/>
+    <element id="Creature Film"/>
+    <element id="Crime Comedy"/>
+    <element id="Culture &amp; Society"/>
+    <element id="Diet &amp; Nutrition"/>
+    <element id="Domestic Comedy"/>
+    <element id="Early Black Cinema"/>
+    <element id="Ensemble Film"/>
+    <element id="Environmental Science"/>
+    <element id="Erotic Drama"/>
+    <element id="Escape Film"/>
+    <element id="Essay Film"/>
+    <element id="Eurowestern"/>
+    <element id="Extreme Sports"/>
+    <element id="Family &amp; Personal Relationships"/>
+    <element id="Family-Oriented Adventure"/>
+    <element id="Fantasy Adventure"/>
+    <element id="Fantasy Comedy"/>
+    <element id="Fantasy Drama"/>
+    <element id="Feminist Film"/>
+    <element id="Film &amp; Television History"/>
+    <element id="Film"/>
+    <element id="Film-Opera"/>
+    <element id="Filmed Play"/>
+    <element id="Finance &amp; Investing"/>
+    <element id="Gardening"/>
+    <element id="Gender Issues"/>
+    <element id="Glamorized Spy Film"/>
+    <element id="Gothic Film"/>
+    <element id="Graphic &amp; Applied Arts"/>
+    <element id="Guided Travel"/>
+    <element id="Hagiography"/>
+    <element id="Harem Anime [Anime]"/>
+    <element id="Haunted House Film"/>
+    <element id="Health &amp; Fitness"/>
+    <element id="Heaven-Can-Wait Fantasies"/>
+    <element id="Heavenly Comedy"/>
+    <element id="Heavenly Drama"/>
+    <element id="Historical Epic"/>
+    <element id="Holiday Film"/>
+    <element id="Holidays"/>
+    <element id="Home Decoration &amp; Improvement"/>
+    <element id="Home Entertaining"/>
+    <element id="Horror Comedy"/>
+    <element id="Hybrid Western"/>
+    <element id="Illnesses &amp; Disabilities"/>
+    <element id="Indian Western"/>
+    <element id="Inspirational Drama"/>
+    <element id="Instrumental Music"/>
+    <element id="Interpersonal Relationships"/>
+    <element id="Inventions &amp; Innovations"/>
+    <element id="Jazz &amp; Modern Dance"/>
+    <element id="Journalism"/>
+    <element id="Jungle Film"/>
+    <element id="Language &amp; Literature"/>
+    <element id="Law &amp; Crime"/>
+    <element id="Leisure Arts"/>
+    <element id="Linguistics"/>
+    <element id="Literary Studies"/>
+    <element id="Marriage &amp; Commitment"/>
+    <element id="Marriage Drama"/>
+    <element id="Media Satire"/>
+    <element id="Media Studies"/>
+    <element id="Blues-rock"/>
+    <element id="Educational entertainment"/>
+    <element id="Informational">
+      <element id="Informational|Educational film" name="Educational film" value="Educational film">
+        <element id="Informational|Educational film|Social guidance film" name="Social guidance film" value="Social guidance film"/>
+        <element id="Informational|Educational film|Training film" name="Training film" value="Training film"/>
+        <element id="Informational|Educational film|Instructional" name="Instructional" value="Instructional"/>
+      </element>
+    </element>
+    <element id="Edupunk"/>
+    <element id="Mashup"/>
+    <element id="Gay &amp; Lesbian Films"/>
+    <element id="Outdoor &amp; Mountain Sports"/>
+    <element id="Adolescence"/>
+    <element id="Filipino"/>
+    <element id="Chinese"/>
+    <element id="Japanese"/>
+    <element id="Biographical Documentaries"/>
+    <element id="Japanese Movies"/>
+    <element id="Chinese Movies"/>
+    <element id="Filipino Movies"/>
+    <element id="Chinese martial arts"/>
+    <element id="Romantic Movies"/>
+    <element id="Bakunyuu"/>
+    <element id="Motor"/>
+    <element id="True crime"/>
+    <element id="African-American Documentaries"/>
+    <element id="Independent Dramas"/>
+    <element id="Tearjerkers"/>
+    <element id="Showbiz Dramas"/>
+    <element id="African-American Comedies"/>
+    <element id="Supernatural Horror"/>
+    <element id="Teen Screams"/>
+    <element id="Latin American Movies"/>
+    <element id="Latino"/>
+    <element id="Buddy Picture"/>
+    <element id="Zapata Westerns"/>
+    <element id="Kids' TV"/>
+    <element id="Anime Sci-Fi"/>
+    <element id="Domaci"/>
+    <element id="Jazz &amp; Easy Listening"/>
+    <element id="Rock &amp; Pop"/>
+    <element id="Pop rock"/>
+    <element id="Sci Fiction"/>
+    <element id="Psychological Drama"/>
+    <element id="Public information film"/>
+    <element id="Triller"/>
+    <element id="Teen drama"/>
+    <element id="Short story"/>
+    <element id="Gangster Film"/>
+    <element id="Special Interest"/>
+    <element id="Tutorial"/>
+    <element id="Theatrical Performances"/>
+    <element id="Web documentary"/>
+    <element id="Darma"/>
+    <element id="Operetta film"/>
+    <element id="Animotion"/>
+    <element id="Family Video"/>
+    <element id="Puppetoon"/>
+    <element id="Ethnofiction"/>
+    <element id="Travel documentary"/>
+    <element id="Variety show"/>
+    <element id="Romantic thriller"/>
+    <element id="Coming-of-age story"/>
+    <element id="Game show"/>
+    <element id="Adventure"/>
+    <element id="Romanze"/>
+    <element id="Abenteuer"/>
+    <element id="Malayalam Cinema"/>
+    <element id="Bengali Cinema"/>
+    <element id="Sci-Fi"/>
+    <element id="Cycling"/>
+    <element id="TV Documentaries"/>
+    <element id="Ages 0-2"/>
+    <element id="/en/animation"/>
+    <element id="Ages 2-4"/>
+    <element id="Ages 5-7"/>
+    <element id="Educational &amp; Guidance"/>
+    <element id="/en/historical_drama"/>
+    <element id="Family"/>
+    <element id="/en/romance_film"/>
+    <element id="Fishing"/>
+    <element id="Mathematics"/>
+    <element id="Language Instruction"/>
+    <element id="Soul music"/>
+    <element id="Rhythm and blues"/>
+    <element id="Sacred Classical Music"/>
+    <element id="Sacred Folk &amp; Traditional Music"/>
+    <element id="Folk music"/>
+    <element id="Family Animation"/>
+    <element id="Prayer"/>
+    <element id="Healing"/>
+    <element id="New Age"/>
+    <element id="Fantary"/>
+    <element id="Travel &amp; Adventure Documentaries"/>
+    <element id="Fiction">
+      <element id="Fiction|Crime Fiction" name="Crime Fiction" value="Crime Fiction">
+        <element id="Fiction|Crime Fiction|Heist film" name="Heist film" value="Heist film"/>
+        <element id="Fiction|Crime Fiction|Poliziotteschi" name="Poliziotteschi" value="Poliziotteschi"/>
+        <element id="Fiction|Crime Fiction|Giallo" name="Giallo" value="Giallo"/>
+        <element id="Fiction|Crime Fiction|Crime Thriller" name="Crime Thriller" value="Crime Thriller"/>
+        <element id="Fiction|Crime Fiction|Buddy cop film" name="Buddy cop film" value="Buddy cop film"/>
+      </element>
+      <element id="Fiction|Mystery" name="Mystery" value="Mystery"/>
+      <element id="Fiction|Historical fiction" name="Historical fiction" value="Historical fiction"/>
+    </element>
+    <element id="Commedia all'italiana"/>
+    <element id="Found footage"/>
+    <element id="Transforming Robots"/>
+    <element id="Television comedy"/>
+    <element id="Screenwriter"/>
+    <element id="Mysticism"/>
+    <element id="New Wave"/>
+    <element id="Historical Drama"/>
+  </dimension>
+  <dimension id='runtime_runtime' type='double'/>
+  <dimension id='freetext' type='text' ignoreFieldLength='true'>
+    <field id='name' ignoreFieldLength='false' stopWords=''/>
+    <field id='genre'/>
+    <field id='tagline'/>
+    <field id='contributors'
+    key='starring_actor,directed_by,written_by'/>
+  </dimension>
+</dimensions>

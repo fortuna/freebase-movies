@@ -18,7 +18,7 @@ Prerequisites
 1. To install the requisite python modules:
 
     ```sh
-    easy_install elementtree # for jsons_to_changeset.py, facet_to_dimension.py, and json_to_tree_dimension.py
+    easy_install elementtree # for facet_to_dimension.py, and json_to_tree_dimension.py
     easy_install google-api-python-client # for export_genres.py
     ```
 
@@ -41,14 +41,14 @@ Prerequisites
 
 1. And then convert that into a Discovery Engine changeset. Note that if you do not have `pv` installed, use `cat`.
     ```sh
-    time pv filtered.jsons | ./jsons_to_changeset.py | gzip -9 > changeset.xml.gz
+    time pv filtered.jsons | jsons_to_changeset.py | gzip -9 > changeset.xml.gz
     ```
 
 1. Or you can do the three steps above in one fell swoop (using tee to retain copies of the intermediate output)
 
     ```sh
     time ./parse_tsv.py film | tee film.jsons | ./jsons_filter.py | tee filtered.jsons \
-    | ./jsons_to_changeset.py | tee changeset.xml | gzip -9 > changeset.xml.gz
+    | jsons_to_changeset.py | tee changeset.xml | gzip -9 > changeset.xml.gz
     ```
 
 1. To export a keyword dimension to a tree dimension definition

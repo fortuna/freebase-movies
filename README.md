@@ -2,12 +2,25 @@ Overview
 ========
 
 This project contains a series of command-line tools for processing the [Freebase](http://www.freebase.com/)
-[movie data](http://www.freebase.com/schema/film_ into a data set for use by the
+[movie data](http://www.freebase.com/schema/film) into a data set for use by the
 [Discovery Engine](https://transparensee.com/docs/discovery/current/html/index.html).
 
 Freebase data is available under the [creative commons attribution license](http://wiki.creativecommons.org/Creative_Commons_Attribution).
 See [this page](http://www.freebase.com/policies/attribution) for example HTML you can include to if you use their data on your
 web site.
+
+*Note that the TSV format that this tool uses appears to no longer be available.*
+
+See https://developers.google.com/freebase/data for the current data formats available.
+
+Feeling lazy?
+-------------
+
+Many of these files are available from our public s3 bucket [s3://t11e.datasets](http://t11e.datasets.s3.amazonaws.com/).
+You can download a complete changeset [here](http://t11e.datasets.s3.amazonaws.com/freebase/film/2012-11-09/changeset.xml.gz).
+Freebase recently stopped hosting providing the tab-separated mini data dumps (e.g. http://download.freebase.com/datadumps/latest/browse/film.tar.bz2)
+We have an old snapshot of the [film.tar.bz2](http://t11e.datasets.s3.amazonaws.com/freebase/film/2012-11-09/film.tar.bz2) file in our public s3 bucket.
+
 
 Prerequisites
 --------------
@@ -74,8 +87,3 @@ Prerequisites
     cat genres.json | ./json_to_tree_dimension.py| xmllint --format -
     ```
 
-Feeling lazy?
--------------
-
-Many of these files are available from our public s3 bucket [s3://t11e.datasets](http://t11e.datasets.s3.amazonaws.com/).
-You can download a complete changeset [here](http://t11e.datasets.s3.amazonaws.com/freebase/film/2012-11-09/changeset.xml.gz).
